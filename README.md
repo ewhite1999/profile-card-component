@@ -5,7 +5,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -15,27 +14,19 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ## Overview
 
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
-
 ### Screenshot
 
 ![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/nft-preview-card-using-vanilla-css-ui6phmAWN)
-- Live Site URL: [GitHub Pages](https://ewhite1999.github.io/nft-preview-card-component-main/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/profile-card-component-vanilla-css-03OY7fBDa)
+- Live Site URL: [GitHub Pages](https://ewhite1999.github.io/profile-card-component/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
 - Vanilla CSS
 - Flexbox
 
@@ -43,44 +34,12 @@ Users should be able to:
 
 The main things I learnt/had to look up in this project are:
 
-- Box sizing needs to be set like this to apply to everything:
+- On mobile devices, setting overflow in body is overridden, you need to set it like this:
 
 ```css
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-:root {
-  box-sizing: border-box;
-}
-```
-
-- How to center an image without absolute positioning:
-
-```css
-.container {
+.mobile_wrapper {
+  overflow: hidden;
   position: relative;
-}
-.absolute_center {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-```
-
-- How to overlay a colour on an image when overed:
-
-```css
-.img_container {
-  background-color: var(--overlay_colour);
-  line-height: 0;
-}
-.img_container img:hover {
-  opacity: 0.5;
 }
 ```
 
